@@ -23,7 +23,8 @@
         <activity android:name=".Reva_Guide" />
         <activity android:name=".Contact_Us" />
         <activity android:name=".Faq" />
-        <activity android:name=".Web_Visit" />
+        <activity android:name=".Web_Visit"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity android:name=".Login"></activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
