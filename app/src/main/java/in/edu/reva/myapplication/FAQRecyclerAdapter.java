@@ -34,10 +34,18 @@ public class FAQRecyclerAdapter extends RecyclerView.Adapter<FAQRecyclerAdapter.
         public TextView Ques;
         public TextView Ans;
 
-        public ViewHolder(View itemView) {
+        public ViewHolder(final View itemView) {
             super(itemView);
             Ques = (TextView) itemView.findViewById(R.id.Question);
             Ans = (TextView) itemView.findViewById(R.id.Answer);
+            // cardView moves to contact us section
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override public void onClick(View v) {
+                    Intent i =new Intent(itemView.getContext(), Contact_Us.class);
+                    itemView.getContext().startActivity(i);
+
+                }
+            });
 
         }
     }
