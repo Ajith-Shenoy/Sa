@@ -20,7 +20,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".About_saviskara" />
-        <activity android:name=".Reva_Guide" />
         <activity android:name=".Contact_Us" />
         <activity android:name=".Faq" />
         <activity android:name=".Web_Visit"

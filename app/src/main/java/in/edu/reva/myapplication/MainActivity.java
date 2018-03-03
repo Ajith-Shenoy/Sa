@@ -23,19 +23,9 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer,toolbar,R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -57,7 +47,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+        return false;
     }
 
     @Override
@@ -85,22 +75,22 @@ public class MainActivity extends AppCompatActivity
             Intent i = new Intent(MainActivity.this,About_saviskara.class);
             startActivity(i);
             // Handle the About Action
-        } else if (id == R.id.nav_Faq) {
+        }
+        else if (id == R.id.nav_Faq)
+        {
             Intent i = new Intent(MainActivity.this,Faq.class);
-            startActivity(i);
-
-        } else if (id == R.id.nav_Guide) {
-            Intent i = new Intent(MainActivity.this,Reva_Guide.class);
             startActivity(i);
 
         }
 
-        else if (id == R.id.nav_ContactUs) {
+        else if (id == R.id.nav_ContactUs)
+        {
             Intent i = new Intent(MainActivity.this,Contact_Us.class);
             startActivity(i);
 
 
-        } else if (id == R.id.nav_VisitWeb) {
+        } else if (id == R.id.nav_VisitWeb)
+        {
             Intent i = new Intent(MainActivity.this,Web_Visit.class);
             startActivity(i);
 

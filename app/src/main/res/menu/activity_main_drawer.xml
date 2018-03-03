@@ -9,17 +9,9 @@
             android:icon="@drawable/info"
             android:title="About Saviskaara" />
         <item
-            android:id="@+id/nav_Guide"
-            android:icon="@drawable/guide"
-            android:title="Guide To Reva" />
-        <item
             android:id="@+id/nav_Faq"
             android:icon="@drawable/faq"
             android:title="FAQ" />
-        <!-- <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" /> -->
     </group>
 
     <item android:title="Communicate">
