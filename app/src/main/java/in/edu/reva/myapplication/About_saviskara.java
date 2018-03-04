@@ -23,7 +23,7 @@ public class About_saviskara extends AppCompatActivity
         View aboutPage = new AboutPage(this)
                 .setDescription("Saviskara is a Techno-Cultural fest.\nOrganised by the school of C&IT.\nReva University Bangalore.\n" + "It's governed by RACIT ")
                 .isRTL(false)
-                .setImage(R.drawable.small)
+                .setImage(R.drawable.saviskaraboutus)
                 .addGroup("Connect with us")
                 //.addEmail("elmehdi.sakout@gmail.com")
                 .addWebsite("https://saviskara.github.io/2018/")
