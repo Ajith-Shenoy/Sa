@@ -100,4 +100,20 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+    public void gotoTech (View view)
+    {
+        Intent i = new Intent(this,TechMain.class);
+        startActivity(i);
+
+    }
+    public void gotoRecreational (View v)
+    {
+        Intent i = new Intent(this,Recreational.class);
+        startActivity(i);
+    }
+    public void gotoCultural (View v)
+    {
+        Intent i = new Intent(this,CulturalMain.class);
+        startActivity(i);
+    }
 }

@@ -1,0 +1,85 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:id="@+id/name"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:id="@+id/email"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SRN/USN"
+            android:id="@+id/usn"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            />
+        <EditText
+            android:id="@+id/EventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event Name"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/phone"
+            android:layout_height="wrap_content"
+            android:hint="Contact No. (Whatsapp)"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            />
+        <EditText
+            android:id="@+id/RegAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registration Amount"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/college"
+            android:hint="University/College"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"/>
+        <Button
+            android:id="@+id/RegButton"
+            android:text="Submit"
+            android:layout_height="48dp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -23,7 +23,7 @@ public class FAQRecyclerAdapter extends RecyclerView.Adapter<FAQRecyclerAdapter.
             "Can I register via. the website?", "What if the event timings clash?", "How can i make payments?"};
     private String[] Answers = {"No. Amazon Vouchers Only"
             , "No. Event registrations shall be closed 24H in advance.",
-            "No. But under special circumstances a refund may be considered.Contact us well in advance.",
+            "No. But under special circumstances a refund might be considered.Contact us well in advance.",
             "Yes. Submission of the participation certificate shall fetch you attendance.",
             "Yes.",
             "No. App registrations only.",
