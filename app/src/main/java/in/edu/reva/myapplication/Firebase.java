@@ -71,6 +71,10 @@ public class Firebase extends AppCompatActivity {
                 String college =inputCollege.getText().toString();
                 String regamount=inputRegAmount.getText().toString();
                 createUser(name,email,usn,contact,regamount,eventName,college);
+                Toast.makeText(Firebase.this,"Thank You!",Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(Firebase.this,MainActivity.class);
+                startActivity(i);
+                finish();
 
             }
         });
