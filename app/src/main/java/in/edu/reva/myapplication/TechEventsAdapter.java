@@ -23,8 +23,8 @@ public class TechEventsAdapter extends RecyclerView.Adapter<TechEventsAdapter.Vi
             "Port the code where you'll have to translate a few lines of code to another.",
     };
 
-    private String[] TRegAmount = {"Reg.Amount: 100", "Reg.Amount: 100", "Reg.Amount: 200", "Reg.Amount: 100", "Reg.Amount: 50", "Reg.Amount: 100", "Reg.Amount: 100"};
-    private String[] TPrizeMoney = {"Prize : 1000", "Prize : 1000", "Prize : 2000", "Prize : 1000", "Prize : 1000", "Prize : 1000", "Prize : 1000"};
+    private String[] TRegAmount = {"100", "100", "200", "100", "50", "100", "100"};
+    private String[] TPrizeMoney = {"1000","1000","2000","1000","1000","1000","1000"};
 
     class ViewHolder extends RecyclerView.ViewHolder {
         public TextView techTitle;
@@ -41,6 +41,8 @@ public class TechEventsAdapter extends RecyclerView.Adapter<TechEventsAdapter.Vi
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override public void onClick(View v) {
                     Intent i =new Intent(itemView.getContext(),Firebase.class);
+                    i.putExtra("regAmount",techRegAmount.getText().toString());
+                    i.putExtra("Ename",techTitle.getText().toString());
                     itemView.getContext().startActivity(i);
 
                 }

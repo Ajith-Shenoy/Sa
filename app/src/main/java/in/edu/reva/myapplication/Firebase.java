@@ -1,5 +1,4 @@
 package in.edu.reva.myapplication;
-
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,13 +26,20 @@ public class Firebase extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firebase);
+        //get data from previous activity
+        Intent intent=getIntent();
+        String RegAmount=intent.getStringExtra("regAmount");
+        String Ename=intent.getStringExtra("Ename");
+        //data recieved
         inputName = (EditText) findViewById(R.id.name);
         inputEmail = (EditText) findViewById(R.id.email);
         inputUsn = (EditText) findViewById(R.id.usn);
         inputEventName = (EditText) findViewById(R.id.EventName);
+        inputEventName.setText(Ename);
         inputContact = (EditText) findViewById(R.id.phone);
         inputCollege = (EditText) findViewById(R.id.college);
         inputRegAmount = (EditText) findViewById(R.id.RegAmount);
+        inputRegAmount.setText(RegAmount);
         SubmitForm = (Button) findViewById(R.id.RegButton);
         mFirebaseInstance = FirebaseDatabase.getInstance();
         mFirebaseDatabase = mFirebaseInstance.getReference("users");

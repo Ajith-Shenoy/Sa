@@ -2,8 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/card_view"
-    card_view:cardBackgroundColor="#81C784"
-    card_view:cardCornerRadius="12dp"
+    card_view:cardCornerRadius="8dp"
     card_view:cardElevation="3dp"
     card_view:contentPadding="4dp"
     android:foreground="?selectableItemBackground"
@@ -14,7 +13,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp" >
+        android:padding="16dp" >
         <TextView
             android:id="@+id/CTittle"
             android:text="Title"
@@ -30,36 +29,42 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="16sp"
+            android:textStyle="italic"
             android:layout_below="@id/CTittle"
             android:layout_alignParentLeft="true"
             android:layout_marginBottom="8dp"
             />
-        <TextView
-            android:id="@+id/Creg"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:padding="8dp"
-            android:text="Reg. Amount"
-            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
             android:layout_below="@id/CDesc"
-            android:layout_marginBottom="8dp"
-            android:textStyle="bold"
-            />
-        <TextView
-            android:id="@+id/CPrize"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:layout_below="@id/CDesc"
-            android:padding="8dp"
-            android:text="Prize Amount :"
-            android:layout_marginLeft="70dp"
-            android:layout_toRightOf="@id/Creg"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginBottom="8dp"
-            android:textStyle="bold"
-            />
+            android:padding="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reg. Amount :"
+                android:textStyle="bold"
+                android:layout_marginRight="8dp"/>
+            <TextView
+                android:id="@+id/Creg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginRight="40dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prize :"
+                android:textStyle="bold"
+                android:layout_marginRight="8dp"/>
+            <TextView
+                android:id="@+id/CPrize"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
     </RelativeLayout>
 </android.support.v7.widget.CardView>

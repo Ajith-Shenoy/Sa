@@ -17,8 +17,8 @@ public class CulturalRecyclerAdapter extends RecyclerView.Adapter<CulturalRecycl
     private String[] CDescription = {"Take up any instrument and draw, paint , colour on a sheet of paper/canvas.",
             "The event provides a platform to all the budding singers to mesmerize the audience.The participants will not be allowed to refer to the lyrics while singing.",
             "The time limit is 1 hour 30 mins, and the participants need to get their own supplies"};
-    private String[] CReg = {"Reg.Amount: 50", "Reg.Amount: 50", "Reg.Amount: 100"};
-    private String[] CPrizeMoney = {"Prize : 500", "Prize : 500", "Prize : 1000"};
+    private String[] CReg = {"50","50","100"};
+    private String[] CPrizeMoney = {"500","500","1000"};
 
     class ViewHolder extends RecyclerView.ViewHolder {
         public TextView CultTitle;
@@ -35,6 +35,9 @@ public class CulturalRecyclerAdapter extends RecyclerView.Adapter<CulturalRecycl
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override public void onClick(View v) {
                     Intent i =new Intent(itemView.getContext(),Firebase.class);
+                    //Send data to next activity
+                    i.putExtra("regAmount",CRegAmount.getText().toString());
+                    i.putExtra("Ename",CultTitle.getText().toString());
                     itemView.getContext().startActivity(i);
 
                 }

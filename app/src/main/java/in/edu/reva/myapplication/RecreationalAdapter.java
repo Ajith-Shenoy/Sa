@@ -22,8 +22,8 @@ public class RecreationalAdapter extends RecyclerView.Adapter<RecreationalAdapte
                                       "Make a  V-Log of all the events of SAVISKARA and make a 2 minutes video."
                                     };
 
-    private String[] RRegAmount = {"Reg.Amount: 50", "Reg.Amount: 100", "Reg.Amount: 50", "Reg.Amount: 50", "Reg.Amount: 50"};
-    private String[] RPrizeMoney = {"Prize : 1000", "Prize : 1500", "Prize : 500", "Prize : 500", "Prize : 500"};
+    private String[] RRegAmount = {"50", "100", "50", "50", "50"};
+    private String[] RPrizeMoney = {"1000", "1500", "500", "500", "500"};
 
     class ViewHolder extends RecyclerView.ViewHolder {
         public TextView RTitle;
@@ -41,6 +41,9 @@ public class RecreationalAdapter extends RecyclerView.Adapter<RecreationalAdapte
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override public void onClick(View v) {
                     Intent i =new Intent(itemView.getContext(),Firebase.class);
+                    //send to next intent
+                    i.putExtra("regAmount",RecreationalRegAmount.getText().toString());
+                    i.putExtra("Ename",RTitle.getText().toString());
                     itemView.getContext().startActivity(i);
 
                 }
