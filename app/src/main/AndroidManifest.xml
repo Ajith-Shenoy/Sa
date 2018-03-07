@@ -39,7 +39,8 @@
         <activity android:name=".TechMain" />
         <activity android:name=".Recreational" />
         <activity android:name=".CulturalMain" />
-        <activity android:name=".Firebase"></activity>
+        <activity android:name=".Firebase" />
+        <activity android:name=".Inhouse"></activity>
     </application>
 
 </manifest>

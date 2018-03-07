@@ -5,43 +5,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="8dp"
+    android:layout_margin="16dp"
+    android:padding="16dp"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="in.edu.reva.myapplication.MainActivity"
     tools:showIn="@layout/app_bar_main">
-<Button
-    android:id="@+id/TechEventButton"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Technical"
-    android:onClick="gotoTech"
-    android:textColor="#F5F5F5"
-    android:background="@drawable/buttonstyle"
-    android:layout_weight="1"
-    android:layout_marginTop="16dp"
-    android:layout_marginBottom="16dp"
-     />
+
     <Button
-        android:id="@+id/CultEventButton"
-        android:layout_width="match_parent"
+        android:id="@+id/Inhouse"
+        android:layout_width="260dp"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:text="Cultural"
-        android:onClick="gotoCultural"
-        android:textColor="#F5F5F5"
         android:layout_marginBottom="16dp"
+        android:layout_marginTop="96dp"
         android:background="@drawable/buttonstyle"
-        android:layout_weight="1"
-        />
+        android:onClick="catalogue"
+        android:text="In-house"
+        android:textColor="#F5F5F5" />
     <Button
-        android:id="@+id/RecreationalEventButton"
-        android:layout_width="match_parent"
+        android:id="@+id/Others"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:text="Recreational"
-        android:onClick="gotoRecreational"
+        android:text="Others"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="gotoTech"
         android:textColor="#F5F5F5"
         android:background="@drawable/buttonstyle"
-        android:layout_weight="1"
         />
+
 
 </LinearLayout>

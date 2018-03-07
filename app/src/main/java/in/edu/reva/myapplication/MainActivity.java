@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -107,14 +108,10 @@ public class MainActivity extends AppCompatActivity
         startActivity(i);
 
     }
-    public void gotoRecreational (View v)
+    public void  catalogue (View v)
     {
-        Intent i = new Intent(this,Recreational.class);
-        startActivity(i);
-    }
-    public void gotoCultural (View v)
-    {
-        Intent i = new Intent(this,CulturalMain.class);
+        Intent i = new Intent(this,Inhouse.class);
+        Toast.makeText(this,"Welcome!!!",Toast.LENGTH_SHORT).show();
         startActivity(i);
     }
 }
