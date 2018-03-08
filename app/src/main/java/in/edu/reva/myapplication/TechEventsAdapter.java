@@ -3,6 +3,7 @@ package in.edu.reva.myapplication;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,6 +27,27 @@ public class TechEventsAdapter extends RecyclerView.Adapter<TechEventsAdapter.Vi
     private String[] TRegAmount = {"100", "100", "200", "100", "50", "100", "100"};
     private String[] TPrizeMoney = {"1000","1000","2000","1000","1000","1000","1000"};
 
+    @Override
+    public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
+        View v = LayoutInflater.from(viewGroup.getContext())
+                .inflate(R.layout.techcard, viewGroup, false);
+        ViewHolder viewHolder = new ViewHolder(v);
+        return viewHolder;
+    }
+
+    @Override
+    public void onBindViewHolder(ViewHolder viewHolder, int i) {
+        viewHolder.techTitle.setText(TTitle[i]);
+        viewHolder.techDesc.setText(TDescription[i]);
+        viewHolder.techRegAmount.setText(TRegAmount[i]);
+        viewHolder.techPrize.setText(TPrizeMoney[i]);
+    }
+
+    @Override
+    public int getItemCount() {
+        return TTitle.length;
+    }
+
     class ViewHolder extends RecyclerView.ViewHolder {
         public TextView techTitle;
         public TextView techDesc;
@@ -48,27 +70,6 @@ public class TechEventsAdapter extends RecyclerView.Adapter<TechEventsAdapter.Vi
                 }
             });
         }
-    }
-
-    @Override
-    public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View v = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.techcard, viewGroup, false);
-        ViewHolder viewHolder = new ViewHolder(v);
-        return viewHolder;
-    }
-
-    @Override
-    public void onBindViewHolder(ViewHolder viewHolder, int i) {
-        viewHolder.techTitle.setText(TTitle[i]);
-        viewHolder.techDesc.setText(TDescription[i]);
-        viewHolder.techRegAmount.setText(TRegAmount[i]);
-        viewHolder.techPrize.setText(TPrizeMoney[i]);
-    }
-
-    @Override
-    public int getItemCount() {
-        return TTitle.length;
     }
 }
 

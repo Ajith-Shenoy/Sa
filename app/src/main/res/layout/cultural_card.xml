@@ -6,6 +6,7 @@
     android:layout_margin="8dp"
     android:clickable="true"
     android:foreground="?selectableItemBackground"
+    card_view:cardBackgroundColor="#212121"
     card_view:cardCornerRadius="8dp"
     card_view:cardElevation="3dp"
     card_view:contentPadding="4dp">
@@ -22,6 +23,7 @@
             android:layout_marginBottom="8dp"
             android:gravity="center_horizontal"
             android:text="@string/title"
+            android:textColor="#FAFAFA"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -32,6 +34,7 @@
             android:layout_alignParentStart="true"
             android:layout_below="@id/CTittle"
             android:layout_marginBottom="8dp"
+            android:textColor="#FAFAFA"
             android:textSize="16sp"
             android:textStyle="italic" />
 
@@ -47,6 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:text="@string/reg_amount"
+                android:textColor="#FAFAFA"
                 android:textStyle="bold" />
 
             <TextView
@@ -54,6 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="40dp"
+                android:textColor="#FAFAFA"
                 android:textSize="16sp" />
 
             <TextView
@@ -61,12 +66,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:text="@string/prize"
+                android:textColor="#FAFAFA"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/CPrize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#FAFAFA"
                 android:textSize="16sp" />
         </LinearLayout>
     </RelativeLayout>
