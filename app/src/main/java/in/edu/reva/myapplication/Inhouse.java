@@ -14,7 +14,7 @@ public class Inhouse extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inhouse);
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffffff")));
+        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#263238")));
     }
     public void gotoRecreational (View v)
     {
