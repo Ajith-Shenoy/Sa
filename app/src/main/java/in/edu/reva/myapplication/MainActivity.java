@@ -107,6 +107,7 @@ public class MainActivity extends AppCompatActivity
     public void gotoTech (View view)
     {
         Intent i = new Intent(this,TechMain.class);
+        Toast.makeText(this,"Welcome!!!",Toast.LENGTH_SHORT).show();
         startActivity(i);
 
     }
