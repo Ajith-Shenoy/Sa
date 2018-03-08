@@ -7,4 +7,5 @@
     <color name="white">#EDE7F6</color>
     <color name="lightblue">#3949AB</color>
     <color name="thukali">#01579B</color>
+    <color name="darkStatus">#424242</color>
 </resources>
