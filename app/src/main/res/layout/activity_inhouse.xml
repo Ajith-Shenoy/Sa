@@ -7,7 +7,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Technical"
+        android:text="@string/technical"
         android:onClick="gotoTechnical"
         android:padding="8dp"
         android:layout_marginTop="90dp"
@@ -16,7 +16,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cultural"
+        android:text="@string/cultural"
         android:onClick="gotoCultural"
         android:padding="8dp"
         android:layout_marginBottom="45dp"
@@ -24,7 +24,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="recreational"
+        android:text="@string/recreational"
         android:padding="8dp"
         android:onClick="gotoRecreational"
         android:layout_marginBottom="45dp"

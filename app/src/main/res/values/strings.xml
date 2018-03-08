@@ -9,4 +9,22 @@
     <string name="title_activity_splashscreen">Splashscreen</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="technical">Technical</string>
+    <string name="cultural">Cultural</string>
+    <string name="recreational">recreational</string>
+    <string name="saviskara">Saviskara</string>
+    <string name="weblink"><a heref="https://saviskara.github.io/2018/">Saviskara</a></string>
+    <string name="weblink1"><a heref="https://saviskara.github.io/2018/">Go to site</a></string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="srn_usn">SRN/USN</string>
+    <string name="event_name">Event Name</string>
+    <string name="contact_no_whatsapp">Contact No. (Whatsapp)</string>
+    <string name="registration_amount">Registration Amount</string>
+    <string name="university_college">University/College</string>
+    <string name="submit">Submit</string>
+    <string name="title">Title</string>
+    <string name="reg_amount">Reg. Amount :</string>
+    <string name="prize">Prize :</string>
+
 </resources>
