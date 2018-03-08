@@ -20,7 +20,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
     private String[] Names = {"Anuj","Sai Venkat","Vishal","Tanmay"};
 
-    private String[] Contact = {"09999847434","09113594528","8197550774","9035895092"};
+    private String[] Contact = {"09999847434","09113594528","8197550774","9035859092"};
 
     private String[] Department = {"Student President","Cultural & Re-creational Dept.","Technical Dept.","Venue & Management"};
 
