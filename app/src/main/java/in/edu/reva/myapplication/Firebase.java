@@ -130,5 +130,8 @@ public class Firebase extends AppCompatActivity {
                 Log.e(TAG, "Failed to read user", error.toException());
             }
         });
+
+
+
     }
 }
