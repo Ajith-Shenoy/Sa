@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/backgroundmatrix"
+    android:background="@drawable/mainback"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="in.edu.reva.myapplication.MainActivity"
     tools:showIn="@layout/app_bar_main">
@@ -17,22 +17,24 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="16dp"
+        android:textStyle="bold"
         android:layout_marginTop="96dp"
         android:background="@drawable/buttonstyle"
         android:onClick="catalogue"
         android:text="In-house"
-        android:textColor="#F5F5F5" />
+        android:textColor="@color/black_overlay" />
 
     <Button
         android:id="@+id/Others"
         android:layout_width="260dp"
+        android:textStyle="bold"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="100dp"
         android:background="@drawable/buttonstyle"
         android:onClick="gotoTech"
         android:text="Others"
-        android:textColor="#F5F5F5" />
+        android:textColor="@color/black_overlay" />
 
 
 </LinearLayout>
