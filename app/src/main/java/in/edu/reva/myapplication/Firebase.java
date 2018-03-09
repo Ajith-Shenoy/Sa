@@ -1,9 +1,14 @@
 package in.edu.reva.myapplication;
 import android.content.Intent;
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -21,6 +26,8 @@ public class Firebase extends AppCompatActivity {
     private FirebaseDatabase mFirebaseInstance;
     private String userId;
     private static final String TAG = MainActivity.class.getSimpleName();
+
+    private TextInputLayout inputLayoutName, inputLayoutEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +48,14 @@ public class Firebase extends AppCompatActivity {
         inputRegAmount = (EditText) findViewById(R.id.RegAmount);
         inputRegAmount.setText(RegAmount);
         SubmitForm = (Button) findViewById(R.id.RegButton);
+
+        //Textinputlatout
+        inputLayoutName = findViewById(R.id.til_name);
+        inputLayoutEmail = findViewById(R.id.til_mail);
+        inputName.addTextChangedListener(new MyTextWatcher(inputName));
+        inputEmail.addTextChangedListener(new MyTextWatcher(inputEmail));
+
+
         mFirebaseInstance = FirebaseDatabase.getInstance();
         mFirebaseDatabase = mFirebaseInstance.getReference("users");
         mFirebaseInstance.getReference("app_title").setValue("Saviskara Registration Form");
@@ -76,11 +91,24 @@ public class Firebase extends AppCompatActivity {
                 String contact=inputContact.getText().toString();
                 String college =inputCollege.getText().toString();
                 String regamount=inputRegAmount.getText().toString();
+
+
+                //Fields Empty
+
+                if (name.equals("") || college.equals("") || regamount.equals("") || email.equals("") || usn.equals("") || eventName.equals("") || contact.equals("")) {
+                    Toast.makeText(Firebase.this, "All Credentials are Mandatory", Toast.LENGTH_SHORT).show();
+                }
+
+                else{
                 createUser(name,email,usn,contact,regamount,eventName,college);
                 Toast.makeText(Firebase.this,"Thank You!",Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(Firebase.this,MainActivity.class);
                 startActivity(i);
                 finish();
+            }
+            submitForm();
+
+
 
             }
         });
@@ -129,9 +157,88 @@ public class Firebase extends AppCompatActivity {
                 // Failed to read value
                 Log.e(TAG, "Failed to read user", error.toException());
             }
-        });
+        });}
 
 
+
+
+        /**
+         * Validating form
+         */
+    private void submitForm() {
+        if (!validateName()) {
+            return;
+        }
+
+        if (!validateEmail()) {
+            return;
+        }
+
+
+    }
+
+    private boolean validateName() {
+        if (inputName.getText().toString().trim().isEmpty()) {
+            inputLayoutName.setError(getString(R.string.err_msg_name));
+            requestFocus(inputName);
+            return false;
+        } else {
+            inputLayoutName.setErrorEnabled(false);
+        }
+
+        return true;
+    }
+
+
+    private boolean validateEmail() {
+        String email = inputEmail.getText().toString().trim();
+
+        if (email.isEmpty() || !isValidEmail(email)) {
+            inputLayoutEmail.setError(getString(R.string.err_msg_email));
+            requestFocus(inputEmail);
+            return false;
+        } else {
+            inputLayoutEmail.setErrorEnabled(false);
+        }
+
+        return true;
+    }
+
+
+    private static boolean isValidEmail(String email) {
+        return !TextUtils.isEmpty(email) && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
+    }
+
+    private void requestFocus(View view) {
+        if (view.requestFocus()) {
+            getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+        }
+    }
+
+    private class MyTextWatcher implements TextWatcher {
+
+        private View view;
+
+        MyTextWatcher(View view) {
+            this.view = view;
+        }
+
+        public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+        }
+
+        public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+        }
+
+        public void afterTextChanged(Editable editable) {
+            switch (view.getId()) {
+                case R.id.name:
+                    validateName();
+                    break;
+                case R.id.email:
+                    validateEmail();
+                    break;
+            }
+        }
 
     }
 }
