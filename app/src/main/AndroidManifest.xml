@@ -15,33 +15,46 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".About_saviskara" />
-        <activity android:name=".Contact_Us" />
-        <activity android:name=".Faq" />
+        <activity android:name=".About_saviskara" android:screenOrientation="portrait"/>
+        <activity android:name=".Contact_Us" android:screenOrientation="portrait"/>
+        <activity android:name=".Faq" android:screenOrientation="portrait"/>
         <activity
             android:name=".Web_Visit"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Splashscreen"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TechMain" />
-        <activity android:name=".Recreational" />
-        <activity android:name=".CulturalMain" />
-        <activity android:name=".Firebase" />
-        <activity android:name=".Inhouse"></activity>
+        <activity
+            android:name=".TechMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Recreational"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CulturalMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Firebase"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Inhouse"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
