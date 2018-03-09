@@ -107,14 +107,14 @@ public class MainActivity extends AppCompatActivity
     public void gotoTech (View view)
     {
         Intent i = new Intent(this,TechMain.class);
-        Toast.makeText(this,"Note: Events for Non-Reva University Students",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Note: Events for Non-Reva University Students",Toast.LENGTH_LONG).show();
         startActivity(i);
 
     }
     public void  catalogue (View v)
     {
         Intent i = new Intent(this,Inhouse.class);
-        Toast.makeText(this,"Note: Events for Reva University Students only.",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Note: Events for Reva University Students only.",Toast.LENGTH_LONG).show();
         startActivity(i);
     }
 }
