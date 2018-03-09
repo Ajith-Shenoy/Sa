@@ -26,5 +26,10 @@
     <string name="prize">Prize :</string>
     <string name="contact_no_whatsapp">Contact No. (Whatsapp)</string>
     <string name="registration_amount">Registration Amount</string>
+    <string name="saviskaara">Saviskaara</string>
+    <string name="faq">FAQ</string>
+    <string name="communicate">Communicate</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="visit_our_website">Visit our Website</string>
 
 </resources>

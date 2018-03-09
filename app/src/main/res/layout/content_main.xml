@@ -12,7 +12,6 @@
     tools:showIn="@layout/app_bar_main">
 
     <Button
-        android:id="@+id/Inhouse"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -25,7 +24,6 @@
         android:textColor="#EDE7F6" />
 
     <Button
-        android:id="@+id/Others"
         android:layout_width="260dp"
         android:textStyle="bold"
         android:layout_height="wrap_content"
