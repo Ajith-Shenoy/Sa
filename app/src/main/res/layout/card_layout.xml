@@ -37,7 +37,7 @@
             android:textColor="#FAFAFA"
             android:textColorHint="#FAFAFA"
             android:textSize="16sp"
-            android:textStyle="italic" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/dept"

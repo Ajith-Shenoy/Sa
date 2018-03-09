@@ -34,10 +34,10 @@ public class Splashscreen extends AwesomeSplash
         //Customize Title
         configSplash.setTitleSplash("Saviskara");
         configSplash.setTitleTextColor(R.color.white);
-        configSplash.setTitleTextSize(30f); //float value
+        configSplash.setTitleTextSize(40f); //float value
         configSplash.setAnimTitleDuration(1000);
         configSplash.setAnimTitleTechnique(Techniques.FlipInX);
-        configSplash.setTitleFont("fonts/roboto.ttf"); //provide string to your font l  ocated in assets/fonts/
+        configSplash.setTitleFont("fonts/englishhindhi.ttf"); //provide string to your font l  ocated in assets/fonts/
 
     }
 

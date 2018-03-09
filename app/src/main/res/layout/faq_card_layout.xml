@@ -7,7 +7,7 @@
     android:layout_margin="8dp"
     android:clickable="true"
     android:foreground="?selectableItemBackground"
-    card_view:cardBackgroundColor="#81C784"
+    card_view:cardBackgroundColor="#212121"
     card_view:cardCornerRadius="12dp"
     card_view:cardElevation="3dp"
     card_view:contentPadding="4dp">
@@ -19,6 +19,7 @@
 
         <TextView
             android:id="@+id/Question"
+            android:textColor="#FAFAFA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -26,6 +27,7 @@
 
         <TextView
             android:id="@+id/Answer"
+            android:textColor="#FAFAFA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/Question"

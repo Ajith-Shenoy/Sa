@@ -22,7 +22,7 @@
         android:background="@drawable/buttonstyle"
         android:onClick="catalogue"
         android:text="In-house"
-        android:textColor="@color/black_overlay" />
+        android:textColor="#EDE7F6" />
 
     <Button
         android:id="@+id/Others"
@@ -34,7 +34,7 @@
         android:background="@drawable/buttonstyle"
         android:onClick="gotoTech"
         android:text="Others"
-        android:textColor="@color/black_overlay" />
+        android:textColor="#EDE7F6" />
 
 
 </LinearLayout>
