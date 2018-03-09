@@ -14,17 +14,17 @@
     <string name="recreational">recreational</string>
     <string name="saviskara">Saviskara</string>
     <string name="name">Name</string>
-    <string name="err_msg_name">Enter a valid User Name</string>
+    <string name="err_msg_name">Enter Full Name</string>
     <string name="err_msg_email">Enter a Valid Email Address</string>
     <string name="email">Email</string>
     <string name="srn_usn">SRN/USN</string>
     <string name="event_name">Event Name</string>
-    <string name="contact_no_whatsapp">Contact No. (Whatsapp)</string>
-    <string name="registration_amount">Registration Amount</string>
     <string name="university_college">University/College</string>
     <string name="submit">Submit</string>
     <string name="title">Title</string>
     <string name="reg_amount">Reg. Amount :</string>
     <string name="prize">Prize :</string>
+    <string name="contact_no_whatsapp">Contact No. (Whatsapp)</string>
+    <string name="registration_amount">Registration Amount</string>
 
 </resources>
