@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#1565c0</color>
-    <color name="colorPrimaryDark">#2962ff</color>
+    <color name="colorPrimaryDark">#03A9F4</color>
     <color name="colorAccent">#42a5f5</color>
     <color name="back">#ce3c4ce0</color>
     <color name="black_overlay">#000000</color>
     <color name="white">#abede7f6</color>
     <color name="lightblue">#3949AB</color>
-    <color name="darkStatus">#424242</color>
+    <color name="darkStatus">#263238</color>
+    <color name="green">#00695C</color>
+    <color name="darkpurple">#691a99</color>
 </resources>

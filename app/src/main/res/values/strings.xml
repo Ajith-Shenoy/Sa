@@ -32,5 +32,6 @@
     <string name="contact_us">Contact Us</string>
     <string name="visit_our_website">Visit our Website</string>
     <string name="disclaimer">For Rules Visit Our Website.</string>
+    <string name="click_here_to_go_to_website">Click Here To Go To Website</string>
 
 </resources>

@@ -21,11 +21,11 @@ public class About_saviskara extends AppCompatActivity
         simulateDayNight(/* DAY */ 0);
         Element adsElement = new Element();
         View aboutPage = new AboutPage(this)
-                .setDescription("Saviskara is a Techno-Cultural fest.\nOrganised by the school of C&IT.\nReva University Bangalore.\n" + "It's governed by RACIT ")
+                .setDescription("Saviskara is a Techno-Cultural fest.\nOrganised by the school of Computing and Techmology.\nReva University Bangalore.\n" + "It's governed by RACIT ")
                 .isRTL(false)
                 .setImage(R.drawable.saviskaraboutus)
                 .addGroup("Connect with us")
-                //.addEmail("elmehdi.sakout@gmail.com")
+                .addEmail("saviskaracit@gmail.com")
                 .addWebsite("https://saviskara.github.io/2018/")
                 .addFacebook("SCHOOL.C.IT/")
                 .create();

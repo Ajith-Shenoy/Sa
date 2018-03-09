@@ -3,9 +3,9 @@ package in.edu.reva.myapplication;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -37,6 +37,11 @@ public class Inhouse extends AppCompatActivity {
     {
         Intent i = new Intent(this,TechMain.class);
         startActivity(i);
+    }
+    public void webbutton2(View v)
+    {
+        Intent intent = new Intent(Inhouse.this,Web_Visit.class);
+        startActivity(intent);
     }
 
 }
