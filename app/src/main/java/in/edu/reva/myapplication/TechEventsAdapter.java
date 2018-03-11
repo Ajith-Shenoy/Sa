@@ -1,9 +1,6 @@
 package in.edu.reva.myapplication;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,19 +10,17 @@ import android.widget.TextView;
 
 public class TechEventsAdapter extends RecyclerView.Adapter<TechEventsAdapter.ViewHolder> {
 
-    private String[] TTitle = {"TECHNICAL JAM", "TECH QUIZ", "PAPER PRESENTATION", "IDEATE", "BUG HUNTER", "Tech. TREASURE HUNT", "PORT THE CODE"};
-    private String[] TDescription = {"Technical jam is an all round-fun event on technical talks.",
+    private String[] TTitle = {"TECHNICAL JAM", "TECHNICAL QUIZ", "IDEATE", "BUG HUNTER", "TECHNOSAPIEN", "PORT THE CODE"};
+    private String[] TDescription = {"Technical jam is an all round fun event on technical talks.",
             "Test your technical skills in this curious and fun-filled tech quiz to be declared the biggest techie.",
-            "Have an innovation you want to put across ? Come reach out to an audience !!",
             "Think you have the creativity and ideas for better solutions?Exhibit them here.",
-            "Rectify the toughest and the easiest logical and syntactical eorrors.",
-            "A jumbled set of C program will be given to the participant.\n" +
-                    "The participant must rearrange the statements in order to generate logically and syntactically correct program.",
-            "Port the code where you'll have to translate a few lines of code to another.",
+            "Rectify the logical and syntactical errors.",
+            "Rules of this event shall be given on the spot. Maximum Of 3 in a team.",
+            "Translate a few lines of code from one language to another.",
     };
 
-    private String[] TRegAmount = {"100", "100", "200", "100", "50", "100", "100"};
-    private String[] TPrizeMoney = {"1000","1000","2000","1000","1000","1000","1000"};
+    private String[] TRegAmount = {"100", "100","100", "50", "100", "100"};
+    private String[] TPrizeMoney = {"1000","1000","1000","500","1000","1000"};
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
