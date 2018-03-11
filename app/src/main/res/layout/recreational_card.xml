@@ -75,16 +75,5 @@
                 android:textColor="#FAFAFA"
                 android:textSize="16sp" />
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@+id/linearLayout3"
-            android:layout_gravity="bottom"
-            android:text="Tap to Register."
-            android:textColor="#ffffff"
-            android:textSize="13sp" />
-
     </RelativeLayout>
 </android.support.v7.widget.CardView>

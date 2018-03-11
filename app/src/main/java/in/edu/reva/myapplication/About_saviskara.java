@@ -24,7 +24,6 @@ public class About_saviskara extends AppCompatActivity
                 .isRTL(false)
                 .setImage(R.drawable.saviskaraboutus)
                 .addGroup("Connect with us")
-                //.addEmail("saviskaracit@gmail.com")
                 .addWebsite("https://saviskara.github.io/2018/")
                 .addFacebook("SCHOOL.C.IT/")
                 .addItem(email())

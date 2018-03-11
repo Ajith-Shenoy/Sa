@@ -22,6 +22,7 @@ public class CulturalMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cultural_main);
         cardView =findViewById(R.id.cultCard);
+        getSupportActionBar().setTitle("Cultural Events Catalogue");
         //add status bar and action bar color
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);

@@ -20,6 +20,7 @@ public class Recreational extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recreational);
+        getSupportActionBar().setTitle("Recreational Events Catalogue");
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);

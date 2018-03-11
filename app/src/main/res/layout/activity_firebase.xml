@@ -1,145 +1,143 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/internalgradient"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="@drawable/internalgradient">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/til_name"
-            android:layout_marginTop="8dp"
-            android:textColorHint="@color/white"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/white">
 
             <EditText
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black_overlay"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="20dp"
-                android:hint="@string/name" />
+                android:hint="@string/name"
+                android:textColor="@color/black_overlay" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/til_mail"
-            android:textColorHint="@color/white"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white">
 
             <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
-                android:textColor="@color/black_overlay"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:hint="@string/email"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black_overlay" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:textColorHint="@color/white"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white">
 
             <EditText
                 android:id="@+id/usn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black_overlay"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:hint="@string/srn_usn" />
+                android:hint="@string/srn_usn"
+                android:textColor="@color/black_overlay" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:textColorHint="@color/white"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white">
 
             <EditText
                 android:id="@+id/EventName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black_overlay"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:hint="@string/event_name" />
+                android:hint="@string/event_name"
+                android:textColor="@color/black_overlay" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:textColorHint="@color/white"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white">
 
             <EditText
                 android:id="@+id/phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:textColor="@color/black_overlay"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:hint="@string/contact_no_whatsapp"
                 android:inputType="phone"
-                android:maxLength="10" />
+                android:maxLength="10"
+                android:textColor="@color/black_overlay" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:textColorHint="@color/white"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white">
 
             <EditText
                 android:id="@+id/RegAmount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:textColor="@color/black_overlay"
-                android:maxLength="3"
-                android:inputType="number"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:hint="@string/registration_amount" />
+                android:hint="@string/registration_amount"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/black_overlay" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:textColorHint="@color/white"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white">
 
             <EditText
                 android:id="@+id/college"
                 android:layout_width="match_parent"
-                android:textColor="@color/black_overlay"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="8dp"
-                android:hint="@string/university_college" />
+                android:hint="@string/university_college"
+                android:textColor="@color/black_overlay" />
         </android.support.design.widget.TextInputLayout>
 
         <Button
             android:id="@+id/RegButton"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="48dp"
-            android:textColor="#ffffff"
-            android:background="@color/back"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
-            android:text="@string/submit" />
+            android:background="@color/back"
+            android:text="@string/submit"
+            android:textColor="#ffffff" />
 
     </LinearLayout>
 </ScrollView>

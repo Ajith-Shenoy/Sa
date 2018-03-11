@@ -1,10 +1,11 @@
 package in.edu.reva.myapplication;
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -22,14 +23,17 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class Firebase extends AppCompatActivity {
+    private static final String TAG = MainActivity.class.getSimpleName();
     private EditText inputName, inputEmail, inputUsn, inputContact, inputCollege, inputRegAmount, inputEventName;
     private Button SubmitForm;
     private DatabaseReference mFirebaseDatabase;
     private FirebaseDatabase mFirebaseInstance;
     private String userId;
-    private static final String TAG = MainActivity.class.getSimpleName();
-
     private TextInputLayout inputLayoutName, inputLayoutEmail;
+
+    private static boolean isValidEmail(String email) {
+        return !TextUtils.isEmpty(email) && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,8 +109,8 @@ public class Firebase extends AppCompatActivity {
 
                 else{
                 createUser(name,email,usn,contact,regamount,eventName,college);
-                Toast.makeText(Firebase.this,"Thank You!",Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(Firebase.this,MainActivity.class);
+                Toast.makeText(Firebase.this,"Please Enter Event Name As Purpose of Payment",Toast.LENGTH_LONG).show();
+                Intent i = new Intent(Firebase.this,InstaMojo.class);
                 startActivity(i);
                 finish();
             }
@@ -117,6 +121,7 @@ public class Firebase extends AppCompatActivity {
             }
         });
     }
+
     private void createUser(String name, String email,String usn,String pno,String regamount,String ename,String colName)
     {
         // TODO
@@ -130,6 +135,7 @@ public class Firebase extends AppCompatActivity {
         addUserChangeListener();
 
     }
+
     private void addUserChangeListener()
     {
         // User data change listener
@@ -163,9 +169,6 @@ public class Firebase extends AppCompatActivity {
             }
         });}
 
-
-
-
         /**
          * Validating form
          */
@@ -193,7 +196,6 @@ public class Firebase extends AppCompatActivity {
         return true;
     }
 
-
     private boolean validateEmail() {
         String email = inputEmail.getText().toString().trim();
 
@@ -206,11 +208,6 @@ public class Firebase extends AppCompatActivity {
         }
 
         return true;
-    }
-
-
-    private static boolean isValidEmail(String email) {
-        return !TextUtils.isEmpty(email) && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
     }
 
     private void requestFocus(View view) {
