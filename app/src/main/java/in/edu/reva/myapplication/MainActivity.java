@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer,toolbar,R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -82,26 +82,20 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_About) {
-            Intent i = new Intent(MainActivity.this,About_saviskara.class);
+            Intent i = new Intent(MainActivity.this, About_saviskara.class);
             startActivity(i);
             // Handle the About Action
-        }
-        else if (id == R.id.nav_Faq)
-        {
-            Intent i = new Intent(MainActivity.this,Faq.class);
+        } else if (id == R.id.nav_Faq) {
+            Intent i = new Intent(MainActivity.this, Faq.class);
             startActivity(i);
 
-        }
-
-        else if (id == R.id.nav_ContactUs)
-        {
-            Intent i = new Intent(MainActivity.this,Contact_Us.class);
+        } else if (id == R.id.nav_ContactUs) {
+            Intent i = new Intent(MainActivity.this, Contact_Us.class);
             startActivity(i);
 
 
-        } else if (id == R.id.nav_VisitWeb)
-        {
-            Intent i = new Intent(MainActivity.this,Web_Visit.class);
+        } else if (id == R.id.nav_VisitWeb) {
+            Intent i = new Intent(MainActivity.this, Web_Visit.class);
             startActivity(i);
 
         }
@@ -110,22 +104,22 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-    public void gotoTech (View view)
-    {
-        Intent i = new Intent(this,TechMain.class);
-        Toast.makeText(this,"Note: Events for Non-Reva University Students",Toast.LENGTH_LONG).show();
+
+    public void gotoTech(View view) {
+        Intent i = new Intent(this, TechMain.class);
+        Toast.makeText(this, "Note: Events for Non-Reva University Students", Toast.LENGTH_LONG).show();
         startActivity(i);
 
     }
-    public void  catalogue (View v)
-    {
-        Intent i = new Intent(this,Inhouse.class);
-        Toast.makeText(this,"Note: Events for Reva University Students only.",Toast.LENGTH_LONG).show();
+
+    public void catalogue(View v) {
+        Intent i = new Intent(this, Inhouse.class);
+        Toast.makeText(this, "Note: Events for Reva University Students only.", Toast.LENGTH_LONG).show();
         startActivity(i);
     }
-    public void webbutton(View v)
-    {
-        Intent intent = new Intent(MainActivity.this,Web_Visit.class);
+
+    public void webbutton(View v) {
+        Intent intent = new Intent(MainActivity.this, Web_Visit.class);
         startActivity(intent);
     }
 }
