@@ -20,7 +20,7 @@ public class About_saviskara extends AppCompatActivity
         // title bar name
         getSupportActionBar().setTitle("About Saviskara");
         View aboutPage = new AboutPage(this)
-                .setDescription("Saviskara is a Techno-Cultural fest.\nOrganised by the school of Computing and Techmology.\nReva University Bangalore.\n" + "It's governed by RACIT ")
+                .setDescription("Saviskara is a Techno-Cultural fest.\nOrganised by the school of Computing and Technology.\nReva University Bangalore.\n" + "It's governed by RACIT ")
                 .isRTL(false)
                 .setImage(R.drawable.saviskaraboutus)
                 .addGroup("Connect with us")

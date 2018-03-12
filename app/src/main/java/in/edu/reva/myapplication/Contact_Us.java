@@ -2,9 +2,9 @@ package in.edu.reva.myapplication;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Window;
@@ -22,6 +22,7 @@ public class Contact_Us extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact__us);
+        getSupportActionBar().setTitle("Reach Us");
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);

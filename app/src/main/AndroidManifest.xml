@@ -61,10 +61,7 @@
         <activity
             android:name=".Inhouse"
             android:screenOrientation="portrait" />
-        <activity android:name=".InstaMojo"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        </activity>
+        <activity android:name=".Paytm" />
     </application>
 
 </manifest>

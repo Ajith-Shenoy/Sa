@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
+import android.text.InputType;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -51,10 +52,12 @@ public class Firebase extends AppCompatActivity {
         inputUsn = (EditText) findViewById(R.id.usn);
         inputEventName = (EditText) findViewById(R.id.EventName);
         inputEventName.setText(Ename);
+        inputEventName.setInputType(InputType.TYPE_NULL);
         inputContact = (EditText) findViewById(R.id.phone);
         inputCollege = (EditText) findViewById(R.id.college);
         inputRegAmount = (EditText) findViewById(R.id.RegAmount);
         inputRegAmount.setText(RegAmount);
+        inputRegAmount.setInputType(InputType.TYPE_NULL);
         SubmitForm = (Button) findViewById(R.id.RegButton);
 
         //Textinputlatout
@@ -109,8 +112,7 @@ public class Firebase extends AppCompatActivity {
 
                 else{
                 createUser(name,email,usn,contact,regamount,eventName,college);
-                Toast.makeText(Firebase.this,"Please Enter Event Name As Purpose of Payment",Toast.LENGTH_LONG).show();
-                Intent i = new Intent(Firebase.this,InstaMojo.class);
+                Intent i = new Intent(Firebase.this,Paytm.class);
                 startActivity(i);
                 finish();
             }

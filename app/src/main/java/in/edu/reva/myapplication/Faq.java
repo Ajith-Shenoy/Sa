@@ -26,6 +26,7 @@ public class Faq extends AppCompatActivity
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.setStatusBarColor(ContextCompat.getColor(this, R.color.darkStatus));
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        getSupportActionBar().setTitle("Frequently Asked Questions");
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#263238")));
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         layoutManager = new LinearLayoutManager(this);
