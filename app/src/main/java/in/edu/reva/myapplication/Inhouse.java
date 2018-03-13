@@ -44,5 +44,9 @@ public class Inhouse extends AppCompatActivity {
         Intent intent = new Intent(Inhouse.this,Web_Visit.class);
         startActivity(intent);
     }
+    public void query(View v) {
+        Intent intent = new Intent(this, queryWeb.class);
+        startActivity(intent);
+    }
 
 }
