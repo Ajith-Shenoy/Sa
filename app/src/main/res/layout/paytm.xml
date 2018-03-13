@@ -1,28 +1,36 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:orientation="vertical">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#212121">
+    >
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/paytmImage"
-        android:layout_alignLeft="@id/paytmImage"
-        android:layout_alignRight="@id/paytmImage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
         android:gravity="center"
-        android:padding="16dp"
+        android:padding="18dp"
         android:text="@string/ScanToPay"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/paytmImage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="16dp"
-            android:foregroundGravity="center"
-            android:src="@drawable/paytm" />
+    <ImageView
+        android:id="@+id/paytmImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/paytm" />
 
     <TextView
         android:id="@+id/OR"
@@ -30,20 +38,22 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/paytmImage"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:padding="16dp"
         android:text="@string/or"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="italic" />
 
     <TextView
+        android:id="@+id/taphere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/OR"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="26dp"
         android:clickable="true"
         android:gravity="center"
         android:onClick="paytm"
@@ -53,6 +63,20 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/taphere"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:gravity="start"
+        android:padding="16dp"
+        android:text="@string/Note"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
 
 
 </RelativeLayout>
+</ScrollView>

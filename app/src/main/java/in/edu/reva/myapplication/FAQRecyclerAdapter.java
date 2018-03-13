@@ -13,20 +13,20 @@ import android.widget.TextView;
 
 public class FAQRecyclerAdapter extends RecyclerView.Adapter<FAQRecyclerAdapter.ViewHolder>
 {
-    private String[] Question = {"How will we verify payment ?","Will there be cash prizes ?",
+    private String[] Question = {"When can I register ?","How will we verify payment ?","Will there be cash prizes ?",
             "Are there On-Spot registrations ?",
             "Can I get a refund if I can't make it to the event ?",
             "Will I be getting attendance if i'm not from Reva University or school of C&IT ?",
             "Will every participant get a certificate?",
             "Can I register via. the website?", "What if the event timings clash?", "How can i make payments?"};
-    private String[] Answers = {"Online payments shall be verified prior to the event.Please get reliable proof.","No. Amazon Vouchers Only"
-            , "No. Event registrations shall be closed 24H in advance.",
+    private String[] Answers = {"Incampus registrations shall only be open during the Tea and Lunch break, and after 3 pm.","Online payments shall be verified prior to the event.Please get reliable proof.","No. Amazon Vouchers Only"
+            , "No. Event registrations shall be closed 24 hours in advance.",
             "No. But under special circumstances a refund might be considered.Contact us well in advance.",
             "Yes. Submission of the participation certificate shall fetch you attendance.",
             "Yes.",
             "No. App registrations only.",
             "We'll try our best to manage your participation, but better prioritize.",
-            "Via. Paytm,UPI during Registration Form submission, or at the registration desks payments can be made."};
+            "Via. PAYTM, or at the registration desks payments can be made."};
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i)

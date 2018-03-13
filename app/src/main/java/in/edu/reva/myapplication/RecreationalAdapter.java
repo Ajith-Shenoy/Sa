@@ -15,15 +15,37 @@ import android.widget.TextView;
 public class RecreationalAdapter extends RecyclerView.Adapter<RecreationalAdapter.ViewHolder>
 {
 
-    private String[] RTitle = {"NFS MW 2005", "COUNTER STRIKE 1.6", "Cooking W/O FIRE","Hogathon","Blogging"};
+    private String[] RTitle = {"NFS MW 2005", "COUNTER STRIKE 1.6", "Cooking W/O FIRE","Hogathon","V-logging"};
     private String[] RDescription = {"Arcade racing game, be the first one across the finish line to win.","FPS shooter, max. 5 in a team, 3 min. rounds",
-                                     "Create the best dish fit for consumtion without fire.",
+                                     "Create the best dish fit for consumption without fire.",
                                       "Eat as much as you can faster than others",
-                                      "Make a  V-Log of all the events of SAVISKARA and make a 2 minutes video."
+                                      "Make a  V-Log of all the events and submit post Saviskara , duration 2 min."
                                     };
 
     private String[] RRegAmount = {"50", "100", "50", "50", "50"};
     private String[] RPrizeMoney = {"1000", "1500", "500", "500", "500"};
+
+    @Override
+    public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
+        View v = LayoutInflater.from(viewGroup.getContext())
+                .inflate(R.layout.recreational_card, viewGroup, false);
+        ViewHolder viewHolder = new ViewHolder(v);
+        return viewHolder;
+    }
+
+    @Override
+    public void onBindViewHolder(ViewHolder viewHolder, int i)
+    {
+        viewHolder.RTitle.setText(RTitle[i]);
+        viewHolder.RDesc.setText(RDescription[i]);
+        viewHolder.RecreationalRegAmount.setText(RRegAmount[i]);
+        viewHolder.RPrize.setText(RPrizeMoney[i]);
+    }
+
+    @Override
+    public int getItemCount() {
+        return RTitle.length;
+    }
 
     class ViewHolder extends RecyclerView.ViewHolder {
         public TextView RTitle;
@@ -49,28 +71,6 @@ public class RecreationalAdapter extends RecyclerView.Adapter<RecreationalAdapte
                 }
             });
         }
-    }
-
-    @Override
-    public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View v = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.recreational_card, viewGroup, false);
-        ViewHolder viewHolder = new ViewHolder(v);
-        return viewHolder;
-    }
-
-    @Override
-    public void onBindViewHolder(ViewHolder viewHolder, int i)
-    {
-        viewHolder.RTitle.setText(RTitle[i]);
-        viewHolder.RDesc.setText(RDescription[i]);
-        viewHolder.RecreationalRegAmount.setText(RRegAmount[i]);
-        viewHolder.RPrize.setText(RPrizeMoney[i]);
-    }
-
-    @Override
-    public int getItemCount() {
-        return RTitle.length;
     }
 }
 

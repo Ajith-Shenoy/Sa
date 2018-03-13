@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "887552122053",
-    "firebase_url": "https://saviskara-reva.firebaseio.com",
-    "project_id": "saviskara-reva",
-    "storage_bucket": "saviskara-reva.appspot.com"
+    "project_number": "238534457017",
+    "firebase_url": "https://saviskara-2018.firebaseio.com",
+    "project_id": "saviskara-2018",
+    "storage_bucket": "saviskara-2018.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:887552122053:android:2bd148175c91817a",
+        "mobilesdk_app_id": "1:238534457017:android:33436acf8083cbf7",
         "android_client_info": {
-          "package_name": "in.edu.reva.myapplication"
+          "package_name": "in.edu.reva.saviskara"
         }
       },
       "oauth_client": [
         {
-          "client_id": "887552122053-dcd6ckt6up7bdujcsei2pise2ncn447s.apps.googleusercontent.com",
+          "client_id": "238534457017-nkeuq6f22e1ol030u8l8ma66hrhhnd15.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBO77Wc_khipVScja_cD1XrpL1JypHyLqY"
+          "current_key": "AIzaSyB4tcOe8pYxMQBeEgCNW4T58xWD081iWMo"
         }
       ],
       "services": {
