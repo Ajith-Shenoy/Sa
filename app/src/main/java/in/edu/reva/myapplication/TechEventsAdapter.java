@@ -19,8 +19,8 @@ public class TechEventsAdapter extends RecyclerView.Adapter<TechEventsAdapter.Vi
             "Translate a few lines of code from one language to another.",
     };
 
-    private String[] TRegAmount = {"100", "100","100", "50", "100", "100"};
-    private String[] TPrizeMoney = {"1000","1000","1000","500","1000","1000"};
+    private String[] TRegAmount = {"100", "100","200", "50", "200", "200"};
+    private String[] TPrizeMoney = {"1000","1500","1500","1000","2000","2000"};
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
