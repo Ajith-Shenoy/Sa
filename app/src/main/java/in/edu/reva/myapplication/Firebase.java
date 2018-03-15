@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
-import android.text.InputType;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -52,12 +51,14 @@ public class Firebase extends AppCompatActivity {
         inputUsn = (EditText) findViewById(R.id.usn);
         inputEventName = (EditText) findViewById(R.id.EventName);
         inputEventName.setText(Ename);
-        inputEventName.setInputType(InputType.TYPE_NULL);
+        //Make EditText field read only
+        inputEventName.setKeyListener(null);
         inputContact = (EditText) findViewById(R.id.phone);
         inputCollege = (EditText) findViewById(R.id.college);
         inputRegAmount = (EditText) findViewById(R.id.RegAmount);
         inputRegAmount.setText(RegAmount);
-        inputRegAmount.setInputType(InputType.TYPE_NULL);
+        //Make EditText field read only
+        inputRegAmount.setKeyListener(null);
         SubmitForm = (Button) findViewById(R.id.RegButton);
 
         //Textinputlatout

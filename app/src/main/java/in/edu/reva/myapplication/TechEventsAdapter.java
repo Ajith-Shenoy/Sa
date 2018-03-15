@@ -15,7 +15,7 @@ public class TechEventsAdapter extends RecyclerView.Adapter<TechEventsAdapter.Vi
             "Test your technical skills in this curious and fun-filled tech quiz to be declared the biggest techie.",
             "Think you have the creativity and ideas for better solutions?Exhibit them here.",
             "Rectify the logical and syntactical errors.",
-            "Rules and Description of this event shall be given on the spot. Maximum Of 3 in a team.",
+            "Rules and Description of this event shall be given on the spot. Maximum Of 2 in a team.",
             "Translate a few lines of code from one language to another.",
     };
 
