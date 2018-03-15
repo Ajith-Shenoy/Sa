@@ -18,14 +18,14 @@ public class FAQRecyclerAdapter extends RecyclerView.Adapter<FAQRecyclerAdapter.
             "Can I get a refund if I can't make it to the event ?",
             "Will I be getting attendance if i'm not from Reva University or school of C&IT ?",
             "Will every participant get a certificate?",
-            "Can I register via. the website?", "What if the event timings clash?", "How can i make payments?"};
+            "Can I register via. the website?", "Can I participate in more than one event?", "How can i make payments?"};
     private String[] Answers = {"Incampus registrations shall only be open during the Tea and Lunch break, and after 3 pm.","Online payments shall be verified prior to the event.Please get reliable proof.","No. Amazon Vouchers Only"
             , "No. Event registrations shall be closed 24 hours in advance.",
             "No. But under special circumstances a refund might be considered.Contact us well in advance.",
             "Yes. Submission of the participation certificate shall fetch you attendance.",
-            "Yes.",
+            "Yes, But for technical events only.",
             "No. App registrations only.",
-            "We'll try our best to manage your participation, but better prioritize.",
+            "No. We're helpless if the events coincide.",
             "Via. PAYTM, or at the registration desks payments can be made."};
 
     @Override
