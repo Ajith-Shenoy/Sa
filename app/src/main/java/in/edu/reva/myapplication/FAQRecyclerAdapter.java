@@ -13,13 +13,13 @@ import android.widget.TextView;
 
 public class FAQRecyclerAdapter extends RecyclerView.Adapter<FAQRecyclerAdapter.ViewHolder>
 {
-    private String[] Question = {"When can I register ?","How will we verify payment ?","Will there be cash prizes ?",
+    private String[] Question = {"Prize for Dance event ?","When can I register ?","How will we verify payment ?","Will there be cash prizes ?",
             "Are there On-Spot registrations ?",
             "Can I get a refund if I can't make it to the event ?",
             "Will I be getting attendance if i'm not from Reva University or school of C&IT ?",
             "Will every participant get a certificate?",
             "Can I register via. the website?", "Can I participate in more than one event?", "How can i make payments?"};
-    private String[] Answers = {"Incampus registrations shall only be open during the Tea and Lunch break, and after 3 pm.","Online payments shall be verified prior to the event.Please get reliable proof.","No. Amazon Vouchers Only"
+    private String[] Answers = {"Winner represents the C&IT dept.for REVAMP 2018. No Other monetary prize.","Incampus registrations shall only be open during the Tea and Lunch break, and after 3 pm.","Online payments shall be verified prior to the event.Please get reliable proof.","No. Amazon Vouchers Only"
             , "No. Event registrations shall be closed 24 hours in advance.",
             "No. But under special circumstances a refund might be considered.Contact us well in advance.",
             "Yes. Submission of the participation certificate shall fetch you attendance.",

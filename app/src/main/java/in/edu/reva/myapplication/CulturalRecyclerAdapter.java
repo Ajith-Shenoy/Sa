@@ -13,12 +13,33 @@ import android.widget.TextView;
 
 public class CulturalRecyclerAdapter extends RecyclerView.Adapter<CulturalRecyclerAdapter.ViewHolder> {
 
-    private String[] CTitle = {"ART ATTACK", "Solo Singing", "Rangoli"};
+    private String[] CTitle = {"ART ATTACK", "Solo Singing", "Rangoli","Dance"};
     private String[] CDescription = {"Take up any instrument and draw, paint , colour on a sheet of paper/canvas.",
             "The event provides a platform to all the budding singers to mesmerize the audience.The participants will not be allowed to refer to the lyrics while singing.",
-            "The time limit is 1 hour 30 mins, and the participants need to get their own supplies"};
-    private String[] CReg = {"50","50","100"};
-    private String[] CPrizeMoney = {"500","500","1000"};
+            "The time limit is 1 hour 30 mins, and the participants need to get their own supplies","Team as well as solo performers are welcome. Winner represents C&IT for REVAMP 2018."};
+    private String[] CReg = {"50","50","100","Free!"};
+    private String[] CPrizeMoney = {"500","500","1000","NA"};
+
+    @Override
+    public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
+        View v = LayoutInflater.from(viewGroup.getContext())
+                .inflate(R.layout.cultural_card, viewGroup, false);
+        ViewHolder viewHolder = new ViewHolder(v);
+        return viewHolder;
+    }
+
+    @Override
+    public void onBindViewHolder(CulturalRecyclerAdapter.ViewHolder viewHolder, int i) {
+        viewHolder.CultTitle.setText(CTitle[i]);
+        viewHolder.CDesc.setText(CDescription[i]);
+        viewHolder.CRegAmount.setText(CReg[i]);
+        viewHolder.CPrize.setText(CPrizeMoney[i]);
+    }
+
+    @Override
+    public int getItemCount() {
+        return CTitle.length;
+    }
 
     class ViewHolder extends RecyclerView.ViewHolder {
         public TextView CultTitle;
@@ -43,27 +64,6 @@ public class CulturalRecyclerAdapter extends RecyclerView.Adapter<CulturalRecycl
                 }
             });
         }
-    }
-
-    @Override
-    public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View v = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.cultural_card, viewGroup, false);
-        ViewHolder viewHolder = new ViewHolder(v);
-        return viewHolder;
-    }
-
-    @Override
-    public void onBindViewHolder(CulturalRecyclerAdapter.ViewHolder viewHolder, int i) {
-        viewHolder.CultTitle.setText(CTitle[i]);
-        viewHolder.CDesc.setText(CDescription[i]);
-        viewHolder.CRegAmount.setText(CReg[i]);
-        viewHolder.CPrize.setText(CPrizeMoney[i]);
-    }
-
-    @Override
-    public int getItemCount() {
-        return CTitle.length;
     }
 }
 
