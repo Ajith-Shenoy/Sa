@@ -36,5 +36,6 @@
     <string name="or">OR</string>
     <string name="Note">Note : Get a reliable proof of payment for verification, to obtain your event pass at the registration desk.</string>
     <string name="SpecificQuery">Specific Queries? Ask here.</string>
+    <string name="venue_and_time">Venue and Timings</string>
 
 </resources>

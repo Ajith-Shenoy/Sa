@@ -61,11 +61,14 @@
         <activity
             android:name=".Inhouse"
             android:screenOrientation="portrait" />
-        <activity android:name=".Paytm"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".queryWeb"
+        <activity
+            android:name=".Paytm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".queryWeb"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".Venue_Time"></activity>
     </application>
 
 </manifest>

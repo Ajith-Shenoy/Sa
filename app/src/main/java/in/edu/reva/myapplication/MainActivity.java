@@ -105,6 +105,10 @@ public class MainActivity extends AppCompatActivity
             Intent i = new Intent(MainActivity.this, queryWeb.class);
             startActivity(i);
         }
+        else if (id == R.id.nav_Venue) {
+            Intent i = new Intent(MainActivity.this, Venue_Time.class);
+            startActivity(i);
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -132,4 +136,5 @@ public class MainActivity extends AppCompatActivity
         Intent intent = new Intent(MainActivity.this, queryWeb.class);
         startActivity(intent);
     }
+
 }
